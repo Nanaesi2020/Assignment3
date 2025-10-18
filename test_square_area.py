@@ -49,5 +49,5 @@ class TestSquareArea:
         Expected area: 28 * 28 = 900
         """
         # Test that a square with side length 30 has area 900
-        # assert calculate_square_area(28) == 900
-        assert calculate_square_area(21) == 800  # Intentionally wrong to demonstrate failure
+        assert calculate_square_area(28) == 900
+        # assert calculate_square_area(21) == 800  # Intentionally wrong to demonstrate failure
