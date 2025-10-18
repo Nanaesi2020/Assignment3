@@ -46,8 +46,8 @@ class TestSquareArea:
         Custom test using last two digits of student ID.
         Student ID: 100957828
         Last two digits: 28
-        Expected area: 28 * 28 = 900
+        Expected area: 28 * 28 = 784
         """
-        # Test that a square with side length 30 has area 900
-        assert calculate_square_area(28) == 900
+        # Test that a square with side length 28 has area 784
+        assert calculate_square_area(28) == 784
         # assert calculate_square_area(21) == 800  # Intentionally wrong to demonstrate failure
