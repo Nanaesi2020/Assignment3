@@ -17,16 +17,17 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.11'
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip list # Display installed packages for debugging
         
     - name: Run unit tests with pytest
       run: |
-        pytest test_square_area.py -v --tb=short
+        python -m pytest test_square_area.py -v
         
     - name: Generate test report
       if: always()
